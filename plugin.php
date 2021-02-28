@@ -2,15 +2,15 @@
 
 /**
  * @wordpress-plugin
- * Plugin Name:     AVo_E_O
- * Plugin URI:      ##YOUR URL##
- * Description:     ##YOUR PLUGIN DESC##
- * Version:         ##VERSION##
- * Author:          ##AUTHOR##
- * Author URI:      ##YOUR URL##
+ * Plugin Name:     PinkCrab Locations
+ * Plugin URI:      https://github.com/Pink-Crab
+ * Description:     A simple example plugin built with the PinkCrab plugin framework.
+ * Version:         0.1.0
+ * Author:          Glynn Quelch (PinkCrab)
+ * Author URI:      https://github.com/Pink-Crab
  * License:         GPL-2.0+
  * License URI:     http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain:     ##TEXT DOMAIN##
+ * Text Domain:     PC_Locations
  */
 
 use PinkCrab\WP\Activation;
