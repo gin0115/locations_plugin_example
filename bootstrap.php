@@ -9,13 +9,13 @@ declare(strict_types=1);
  * @since 1.0.0
  */
 
-use PinkCrab\Core\Application\App;
-use PinkCrab\Core\Services\Dice\Dice;
-use PinkCrab\Core\Services\Dice\WP_Dice;
-use PinkCrab\Core\Application\App_Config;
-use PinkCrab\Core\Services\Registration\Loader;
-use PinkCrab\Core\Services\ServiceContainer\Container;
-use PinkCrab\Core\Services\Registration\Register_Loader;
+use PcLocations_001\Dice\Dice;
+use PcLocations_001\PinkCrab\Core\Application\App;
+use PcLocations_001\PinkCrab\Core\Services\Dice\WP_Dice;
+use PcLocations_001\PinkCrab\Core\Application\App_Config;
+use PcLocations_001\PinkCrab\Core\Services\Registration\Loader;
+use PcLocations_001\PinkCrab\Core\Services\ServiceContainer\Container;
+use PcLocations_001\PinkCrab\Core\Services\Registration\Register_Loader;
 
 // Populate Config with settings, if file exists.
 $settings = file_exists( 'config/settings.php' )
@@ -54,6 +54,7 @@ add_action(
 
 		// Initalise all registerable classes.
 		$loader->register_hooks();
+		dump( $loader );
 	},
 	1
 );

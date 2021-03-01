@@ -6,7 +6,7 @@ use Isolated\Symfony\Component\Finder\Finder;
 
 return array(
 	// The prefix configuration. If a non null value will be used, a random prefix will be generated.
-	'prefix'                     => 'PCdVendor',
+	'prefix'                     => 'PcLocations_001',
 
 	// By default when running php-scoper add-prefix, it will prefix all relevant code found in the current working
 	// directory. You can however define which files should be scoped by defining a collection of Finders in the
@@ -144,22 +144,24 @@ return array(
 	'whitelist'                  => array(
 		// 'PHPUnit\Framework\TestCase',   // A specific class
 		'PHPUnit\Framework\*',          // The whole namespace
-		'My_Plugin\*',
 		// '*',                            // Everything
+		'Composer\Autoload\ClassLoader',
+		'PinkCrab\Locations\*',
+		'PinkCrab\WP\Locations\*',
 	),
 
 	// If `true` then the user defined constants belonging to the global namespace will not be prefixed.
 	//
 	// For more see https://github.com/humbug/php-scoper#constants--constants--functions-from-the-global-namespace
-	'whitelist-global-constants' => false,
+	'whitelist-global-constants' => true,
 
 	// If `true` then the user defined classes belonging to the global namespace will not be prefixed.
 	//
 	// For more see https://github.com/humbug/php-scoper#constants--constants--functions-from-the-global-namespace
-	'whitelist-global-classes'   => false,
+	'whitelist-global-classes'   => true,
 
 	// If `true` then the user defined functions belonging to the global namespace will not be prefixed.
 	//
 	// For more see https://github.com/humbug/php-scoper#constants--constants--functions-from-the-global-namespace
-	'whitelist-global-functions' => false,
+	'whitelist-global-functions' => true,
 );

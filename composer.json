@@ -14,7 +14,7 @@
     "autoload": {
         "psr-4": {
             "PinkCrab\\Locations\\": "src",
-            "PinkCrab\\WP\\": "wp"
+            "PinkCrab\\WP\\Locations\\": "wp"
         },
         "files": []
     },
@@ -39,6 +39,8 @@
         "wp-coding-standards/wpcs": "*",
         "object-calisthenics/phpcs-calisthenics-rules": "*",
         "pinkcrab/phpunit-helpers": "dev-master",
+        "jetbrains/phpstorm-stubs": "dev-master",
+        "humbug/php-scoper": "^0.14.0",
         "bamarni/composer-bin-plugin": "^1.4"
     },
     "require": {
@@ -47,6 +49,8 @@
         "pinkcrab/registerables": "^0.3.0",
         "pinkcrab/bladeone-provider": "^1.0",
         "pinkcrab/wp-psr16-cache": "^2.0"
+
+
     },
     "scripts": {
         "test": "phpunit --coverage-clover coverage.xml",
@@ -54,5 +58,7 @@
         "analyse": "vendor/bin/phpstan analyse src -l8",
         "sniff": "./vendor/bin/phpcs src/ -v",
         "all": "composer test && composer analyse && composer sniff"
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
