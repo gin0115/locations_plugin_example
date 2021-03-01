@@ -10,10 +10,8 @@ declare(strict_types=1);
  */
 
 use PcLocations_001\Dice\Dice;
-use PcLocations_001\eftec\bladeone\BladeOne;
 use PcLocations_001\PinkCrab\Core\Application\App;
 use PcLocations_001\PinkCrab\Core\Services\View\View;
-use PcLocations_001\PinkCrab\BladeOne\BladeOne_Provider;
 use PcLocations_001\PinkCrab\Core\Services\Dice\WP_Dice;
 use PcLocations_001\PinkCrab\Core\Application\App_Config;
 use PcLocations_001\PinkCrab\Core\Services\Registration\Loader;
