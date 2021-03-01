@@ -91,7 +91,7 @@ class PHP_Engine implements \PcLocations_001\PinkCrab\Core\Interfaces\Renderable
         // Set all the data values a parameters.
         foreach ($data as $key => $value) {
             if (\is_string($key)) {
-                ${\PcLocations_001\wp_strip_all_tags($key)} = $value;
+                ${\wp_strip_all_tags($key)} = $value;
             }
         }
         include $this->resolve_file_path($view);

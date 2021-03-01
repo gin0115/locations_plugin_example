@@ -89,8 +89,8 @@ class MetaBox
      */
     private function set_screen() : void
     {
-        if (\PcLocations_001\is_admin() && \function_exists('PcLocations_001\\get_current_screen')) {
-            $current_screen = \PcLocations_001\get_current_screen();
+        if (\is_admin() && \function_exists('PcLocations_001\\get_current_screen')) {
+            $current_screen = \get_current_screen();
             if (!empty($current_screen->post_type)) {
                 \array_push($this->screen, $current_screen->post_type);
             }
@@ -188,7 +188,7 @@ class MetaBox
     {
         // Register the metabox.
         $loader->action('add_meta_boxes', function () {
-            \PcLocations_001\add_meta_box($this->key, $this->label, $this->view, $this->screen, $this->context, $this->priority, $this->view_vars);
+            \add_meta_box($this->key, $this->label, $this->view, $this->screen, $this->context, $this->priority, $this->view_vars);
         });
         // If we have any hook calls, add them to the loader.
         if (!empty($this->actions)) {

@@ -57,6 +57,8 @@ add_action(
 		$view = $app::make( View::class );
 		$app->set( 'view', $view );
 
+		dump($app);
+
 		// Initalise all registerable classes.
 		$loader->register_hooks();
 	},

@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit9c30d0cb51e71c9613dac194163a92f8
+class ComposerStaticInit3b3807b0c3cb8d8845db3699b3947523
 {
     public static $prefixLengthsPsr4 = array (
         'P' => 
@@ -184,7 +184,6 @@ class ComposerStaticInit9c30d0cb51e71c9613dac194163a92f8
         'PcLocations_001\\eftec\\bladeone\\BladeOneHtmlBootstrap' => __DIR__ . '/..' . '/eftec/bladeone/lib/BladeOneHtmlBootstrap.php',
         'PcLocations_001\\eftec\\bladeone\\BladeOneLang' => __DIR__ . '/..' . '/eftec/bladeone/lib/BladeOneLang.php',
         'PcLocations_001\\eftec\\bladeonehtml\\BladeOneHtml' => __DIR__ . '/..' . '/eftec/bladeonehtml/lib/BladeOneHtml.php',
-        'PinkCrab\\Locations\\Test' => __DIR__ . '/../..' . '/src/Test.php',
         'PinkCrab\\WP\\Locations\\Activation' => __DIR__ . '/../..' . '/wp/Activation.php',
         'PinkCrab\\WP\\Locations\\Deactivation' => __DIR__ . '/../..' . '/wp/Deactivation.php',
         'PinkCrab\\WP\\Locations\\Uninstalled' => __DIR__ . '/../..' . '/wp/Uninstalled.php',
@@ -193,9 +192,9 @@ class ComposerStaticInit9c30d0cb51e71c9613dac194163a92f8
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit9c30d0cb51e71c9613dac194163a92f8::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit9c30d0cb51e71c9613dac194163a92f8::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit9c30d0cb51e71c9613dac194163a92f8::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit3b3807b0c3cb8d8845db3699b3947523::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit3b3807b0c3cb8d8845db3699b3947523::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit3b3807b0c3cb8d8845db3699b3947523::$classMap;
 
         }, null, ClassLoader::class);
     }

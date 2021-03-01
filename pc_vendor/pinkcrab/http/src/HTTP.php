@@ -93,9 +93,9 @@ class HTTP
      * @param mixed $data
      * @return WP_HTTP_Response
      */
-    public function wp_response($data = null, int $status = 200, array $headers = array()) : \PcLocations_001\WP_HTTP_Response
+    public function wp_response($data = null, int $status = 200, array $headers = array()) : \WP_HTTP_Response
     {
-        return new \PcLocations_001\WP_HTTP_Response($data, $status, $headers);
+        return new \WP_HTTP_Response($data, $status, $headers);
     }
     /**
      * Emits either a PS7 or WP_HTTP Response.
@@ -107,7 +107,7 @@ class HTTP
     public function emit_response($response) : void
     {
         // Throw if not a valid response.
-        if (!$response instanceof \PcLocations_001\Psr\Http\Message\ResponseInterface && !$response instanceof \PcLocations_001\WP_HTTP_Response) {
+        if (!$response instanceof \PcLocations_001\Psr\Http\Message\ResponseInterface && !$response instanceof \WP_HTTP_Response) {
             throw new \InvalidArgumentException('Only ResponseInterface & WP_REST_Response responses can be emitted.');
         }
         // Based on type, emit the response.
@@ -149,7 +149,7 @@ class HTTP
      * @param WP_HTTP_Response $response
      * @return void
      */
-    public function emit_wp_response(\PcLocations_001\WP_HTTP_Response $response) : void
+    public function emit_wp_response(\WP_HTTP_Response $response) : void
     {
         // If headers sent, throw headers already sent.
         $this->headers_sent();

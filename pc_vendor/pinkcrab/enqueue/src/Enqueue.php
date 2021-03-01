@@ -261,7 +261,7 @@ class Enqueue
      */
     private function register_style()
     {
-        \PcLocations_001\wp_enqueue_style($this->handle, $this->src, $this->deps, $this->ver, $this->media);
+        \wp_enqueue_style($this->handle, $this->src, $this->deps, $this->ver, $this->media);
     }
     /**
      * Registers and enqueues or inlines the script, with any passed localised data.
@@ -271,16 +271,16 @@ class Enqueue
     private function register_script()
     {
         if ($this->inline) {
-            \PcLocations_001\wp_register_script($this->handle, '', $this->deps, $this->ver, $this->footer);
+            \wp_register_script($this->handle, '', $this->deps, $this->ver, $this->footer);
             if ($this->does_file_exist($this->src)) {
-                \PcLocations_001\wp_add_inline_script($this->handle, \file_get_contents($this->src) ?: '');
+                \wp_add_inline_script($this->handle, \file_get_contents($this->src) ?: '');
             }
         } else {
             wp_register_script($this->handle, $this->src, $this->deps, $this->ver, $this->footer);
         }
         if (!empty($this->localize)) {
-            \PcLocations_001\wp_localize_script($this->handle, $this->handle, $this->localize);
+            \wp_localize_script($this->handle, $this->handle, $this->localize);
         }
-        \PcLocations_001\wp_enqueue_script($this->handle);
+        \wp_enqueue_script($this->handle);
     }
 }

@@ -207,7 +207,7 @@ class File_Cache implements \PcLocations_001\Psr\SimpleCache\CacheInterface
      */
     protected function compile_file_path(string $filename) : string
     {
-        return \PcLocations_001\wp_normalize_path(\sprintf('%s/%s%s', $this->filepath, $filename, $this->extension));
+        return \wp_normalize_path(\sprintf('%s/%s%s', $this->filepath, $filename, $this->extension));
     }
     /**
      * Compiles the cache item object
@@ -267,7 +267,7 @@ class File_Cache implements \PcLocations_001\Psr\SimpleCache\CacheInterface
     protected function get_contents(string $key) : ?\PcLocations_001\PinkCrab\WP_PSR16_Cache\Cache_Item
     {
         $file_contents = $this->wp_filesystem->get_contents($this->compile_file_path($key)) ?: '';
-        $file_contents = \PcLocations_001\maybe_unserialize($file_contents);
+        $file_contents = \maybe_unserialize($file_contents);
         return \is_a($file_contents, \PcLocations_001\PinkCrab\WP_PSR16_Cache\Cache_Item::class) && $this->validate_contents($key, $file_contents) ? $file_contents : null;
     }
 }
