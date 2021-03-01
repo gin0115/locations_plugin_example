@@ -10,7 +10,7 @@ declare(strict_types=1);
  * @package PinkCrab\
  */
 
-namespace PinkCrab\WP;
+namespace PinkCrab\WP\Locations;
 
 class Uninstalled {
 

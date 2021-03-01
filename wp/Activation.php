@@ -10,10 +10,11 @@ declare(strict_types=1);
  * @package PinkCrab\WP
  */
 
-namespace PinkCrab\WP;
+namespace PinkCrab\WP\Locations;
 
-use PinkCrab\WP\Uninstalled;
-use PinkCrab\Core\Application\App;
+use PinkCrab\WP\Locations\Uninstalled;
+use PcLocations_001\PinkCrab\Core\Application\App;
+
 
 class Activation {
 
