@@ -2,14 +2,12 @@
 
 declare(strict_types=1);
 
-require __DIR__ . '/build-tools/PatcherCreator/RemovePrefixPatcher.php';
 
 use Isolated\Symfony\Component\Finder\Finder;
 
 return array(
 	'prefix'                     => 'PcLocations_001',
 	'finders'                    => array(
-		// Finder::create()->files()->in( 'src' ),
 		Finder::create()
 			->files()
 			->ignoreVCS( true )

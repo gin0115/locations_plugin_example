@@ -2,7 +2,6 @@
 
 require dirname( __DIR__, 1 ) . '/vendor/autoload.php';
 require __DIR__ . '/PatcherCreator/IdentifierExtractor.php';
-require __DIR__ . '/PatcherCreator/RemovePrefixPatcher.php';
 
 use pxlrbt\PhpScoper\PrefixRemover\IdentifierExtractor;
 
