@@ -12,7 +12,7 @@ declare(strict_types=1);
 
 return array(
 	'post_types' => array(
-		'events' => array(
+		'event' => array(
 			'slug' => 'pc_event',
 			'meta' => array(
 				'date'  => 'pc_event_date',

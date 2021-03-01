@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1614609161">
+  <project timestamp="1614609161">
+    <package name="PinkCrab\Locations\Location">
+      <file name="/shared/httpd/woo1/htdocs/wp-content/plugins/locations_plugin_example/src/Location/Location_Taxonomy.php">
+        <class name="PinkCrab\Locations\Location\Location_Taxonomy" namespace="PinkCrab\Locations\Location" fullPackage="Location">
+          <metrics complexity="2" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="7" coveredelements="0"/>
+        </class>
+        <line num="38" type="method" name="__construct" visibility="public" complexity="2" crap="6.00" count="0"/>
+        <line num="40" type="stmt" count="0"/>
+        <line num="41" type="stmt" count="0"/>
+        <line num="42" type="stmt" count="0"/>
+        <line num="44" type="stmt" count="0"/>
+        <line num="46" type="stmt" count="0"/>
+        <line num="47" type="stmt" count="0"/>
+        <metrics loc="48" ncloc="28" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="7" coveredelements="0"/>
+      </file>
+    </package>
+    <metrics files="1" loc="48" ncloc="28" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="7" coveredelements="0"/>
+  </project>
+</coverage>
