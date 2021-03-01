@@ -1,10 +1,5 @@
 <?php
 
-use PinkCrab\WP\Locations\Activation;
-use PinkCrab\WP\Locations\Deactivation;
-use PcLocations_001\PinkCrab\Core\Application\App;
-
-
 /**
  * @wordpress-plugin
  * Plugin Name:     PinkCrab Locations
@@ -18,8 +13,9 @@ use PcLocations_001\PinkCrab\Core\Application\App;
  * Text Domain:     PC_Locations
  */
 
-
-
+use PinkCrab\WP\Locations\Activation;
+use PinkCrab\WP\Locations\Deactivation;
+use PcLocations_001\PinkCrab\Core\Application\App;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	die;
@@ -28,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 require_once __DIR__ . '/pc_vendor/autoload.php';
 require_once __DIR__ . '/bootstrap.php';
 
+
 // Include activate and deactivate hooks (can be removed if not using the hooks).
 register_activation_hook( __FILE__, array( App::make( Activation::class ), 'activate' ) );
 register_deactivation_hook( __FILE__, array( App::make( Deactivation::class ), 'deactivate' ) );
-

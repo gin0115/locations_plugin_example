@@ -83,7 +83,7 @@ return array(
     'PcLocations_001\\eftec\\bladeone\\BladeOneHtmlBootstrap' => $vendorDir . '/eftec/bladeone/lib/BladeOneHtmlBootstrap.php',
     'PcLocations_001\\eftec\\bladeone\\BladeOneLang' => $vendorDir . '/eftec/bladeone/lib/BladeOneLang.php',
     'PcLocations_001\\eftec\\bladeonehtml\\BladeOneHtml' => $vendorDir . '/eftec/bladeonehtml/lib/BladeOneHtml.php',
-    'PinkCrab\\Locations\\Test' => $baseDir . '/src/Test.php',
+    'PinkCrab\\Locations\\Location\\Location_Taxonomy' => $baseDir . '/src/Location/Location_Taxonomy.php',
     'PinkCrab\\WP\\Locations\\Activation' => $baseDir . '/wp/Activation.php',
     'PinkCrab\\WP\\Locations\\Deactivation' => $baseDir . '/wp/Deactivation.php',
     'PinkCrab\\WP\\Locations\\Uninstalled' => $baseDir . '/wp/Uninstalled.php',

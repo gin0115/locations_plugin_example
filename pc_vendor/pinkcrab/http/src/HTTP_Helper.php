@@ -97,7 +97,7 @@ class HTTP_Helper
      * @param mixed $data
      * @return WP_HTTP_Response
      */
-    public static function wp_response($data = null, int $status = 200, array $headers = array()) : \PcLocations_001\WP_HTTP_Response
+    public static function wp_response($data = null, int $status = 200, array $headers = array()) : \WP_HTTP_Response
     {
         return static::get_http()->wp_response($data, $status, $headers);
     }

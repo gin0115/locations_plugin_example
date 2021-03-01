@@ -130,7 +130,7 @@ abstract class Ajax implements \PcLocations_001\PinkCrab\Core\Interfaces\Registe
         $request_params = $this->extract_request_params($request);
         // If we have a nonce value to check.
         if (!empty($this->nonce_handle)) {
-            $nonce_value = \array_key_exists($this->nonce_field, $request_params) ? \PcLocations_001\sanitize_text_field($request_params[$this->nonce_field]) : null;
+            $nonce_value = \array_key_exists($this->nonce_field, $request_params) ? \sanitize_text_field($request_params[$this->nonce_field]) : null;
             // If no nonce, fail.
             if (\is_null($nonce_value) || empty($nonce_value)) {
                 return \false;

@@ -98,7 +98,7 @@ class Transient_Cache implements \PcLocations_001\Psr\SimpleCache\CacheInterface
         if (!$this->is_valid_key_value($key)) {
             return \false;
         }
-        return \PcLocations_001\delete_transient($this->parse_key($key));
+        return \delete_transient($this->parse_key($key));
     }
     /**
      * Clears all transients for the defined group.
@@ -108,7 +108,7 @@ class Transient_Cache implements \PcLocations_001\Psr\SimpleCache\CacheInterface
     public function clear()
     {
         $results = \array_map(function ($e) {
-            return \PcLocations_001\delete_transient($this->parse_key($e));
+            return \delete_transient($this->parse_key($e));
         }, $this->get_group_keys());
         return !\in_array(\false, $results, \true);
     }

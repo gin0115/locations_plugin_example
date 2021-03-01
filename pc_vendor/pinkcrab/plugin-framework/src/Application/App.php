@@ -82,7 +82,7 @@ final class App
                 throw new \Exception('PinkCrab Core not loaded');
             }
         } catch (\Throwable $th) {
-            \PcLocations_001\wp_die(esc_html($th->getMessage()));
+            \wp_die(esc_html($th->getMessage()));
         }
         return self::$instance;
     }

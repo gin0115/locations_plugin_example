@@ -568,17 +568,17 @@
     },
     {
         "name": "pinkcrab\/registerables",
-        "version": "0.3.1",
-        "version_normalized": "0.3.1.0",
+        "version": "0.3.2",
+        "version_normalized": "0.3.2.0",
         "source": {
             "type": "git",
             "url": "https:\/\/github.com\/Pink-Crab\/Module__Registerables.git",
-            "reference": "a1460f487b64e1141f7818a45248cae54d0452f2"
+            "reference": "f761f89079c4e98f8e099403e5aa124b6b6fa85d"
         },
         "dist": {
             "type": "zip",
-            "url": "https:\/\/api.github.com\/repos\/Pink-Crab\/Module__Registerables\/zipball\/a1460f487b64e1141f7818a45248cae54d0452f2",
-            "reference": "a1460f487b64e1141f7818a45248cae54d0452f2",
+            "url": "https:\/\/api.github.com\/repos\/Pink-Crab\/Module__Registerables\/zipball\/f761f89079c4e98f8e099403e5aa124b6b6fa85d",
+            "reference": "f761f89079c4e98f8e099403e5aa124b6b6fa85d",
             "shasum": ""
         },
         "require": {
@@ -601,7 +601,7 @@
             "wp-phpunit\/wp-phpunit": "^5.0",
             "yoast\/phpunit-polyfills": "^0.2.0"
         },
-        "time": "2021-01-29T15:48:55+00:00",
+        "time": "2021-03-01T13:51:31+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {

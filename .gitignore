@@ -1,2 +1,3 @@
 vendor
 wordpress
+build-tools/wp_patcher.do
