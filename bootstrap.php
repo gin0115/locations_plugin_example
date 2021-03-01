@@ -54,7 +54,6 @@ add_action(
 
 		// Initalise all registerable classes.
 		$loader->register_hooks();
-		dump( $loader );
 	},
 	1
 );
