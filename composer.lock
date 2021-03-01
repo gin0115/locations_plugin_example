@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "feb6eaa75f849606b28a95850ad0b833",
+    "content-hash": "370e86f1b8eb954ac573952e1ccf6e2a",
     "packages": [
         {
             "name": "eftec/bladeone",
@@ -555,16 +555,16 @@
         },
         {
             "name": "pinkcrab/registerables",
-            "version": "0.3.1",
+            "version": "0.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Pink-Crab/Module__Registerables.git",
-                "reference": "a1460f487b64e1141f7818a45248cae54d0452f2"
+                "reference": "f761f89079c4e98f8e099403e5aa124b6b6fa85d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Pink-Crab/Module__Registerables/zipball/a1460f487b64e1141f7818a45248cae54d0452f2",
-                "reference": "a1460f487b64e1141f7818a45248cae54d0452f2",
+                "url": "https://api.github.com/repos/Pink-Crab/Module__Registerables/zipball/f761f89079c4e98f8e099403e5aa124b6b6fa85d",
+                "reference": "f761f89079c4e98f8e099403e5aa124b6b6fa85d",
                 "shasum": ""
             },
             "require": {
@@ -608,7 +608,7 @@
             ],
             "description": "Abstract classes for creating post types, taxonomies, metaboxes and ajax calls.",
             "homepage": "https://pinkcrab.co.uk",
-            "time": "2021-01-29T15:48:55+00:00"
+            "time": "2021-03-01T13:51:31+00:00"
         },
         {
             "name": "pinkcrab/wp-psr16-cache",

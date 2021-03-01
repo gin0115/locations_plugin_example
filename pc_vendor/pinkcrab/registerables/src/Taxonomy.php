@@ -218,7 +218,7 @@ abstract class Taxonomy implements \PcLocations_001\PinkCrab\Core\Interfaces\Reg
     {
         // Run setup
         $this->set_up();
-        $args = array('publicly_queryable' => $this->publicly_queryable, 'show_ui' => $this->show_ui, 'show_in_menu' => $this->show_in_menu, 'show_in_nav_menus' => $this->public, 'show_in_rest' => $this->show_in_rest, 'rest_base' => $this->rest_base ?? $this->slug, 'rest_controller_class' => $this->rest_controller_class, 'show_tagcloud' => $this->show_tagcloud, 'show_in_quick_edit' => $this->show_in_quick_edit, 'show_admin_column' => $this->show_admin_column, 'sort' => $this->sort, 'description' => $this->description, 'update_count_callback' => $this->update_count_callback, 'rewrite' => $this->slug, 'label' => $this->label ?? $this->plural, 'query_var' => $this->query_var);
+        $args = array('publicly_queryable' => $this->publicly_queryable, 'show_ui' => $this->show_ui, 'show_in_menu' => $this->show_in_menu, 'show_in_nav_menus' => $this->public, 'show_in_rest' => $this->show_in_rest, 'rest_base' => $this->rest_base ?? $this->slug, 'rest_controller_class' => $this->rest_controller_class, 'show_tagcloud' => $this->show_tagcloud, 'show_in_quick_edit' => $this->show_in_quick_edit, 'show_admin_column' => $this->show_admin_column, 'sort' => $this->sort, 'description' => $this->description, 'update_count_callback' => $this->update_count_callback, 'rewrite' => $this->slug, 'label' => $this->label ?? $this->plural, 'query_var' => $this->query_var, 'hierarchical' => $this->hierarchical);
         // Add optional fields & args.
         $args = $this->optional_args($args);
         $args['labels'] = $this->hierarchical ? $this->hierarchical_labels() : $this->flat_labels();

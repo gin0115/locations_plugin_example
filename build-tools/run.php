@@ -5,7 +5,7 @@ require __DIR__ . '/PatcherCreator/IdentifierExtractor.php';
 
 use pxlrbt\PhpScoper\PrefixRemover\IdentifierExtractor;
 
-// Extract all identifier from stubs.
+// Extract all identifiers from stubs.
 $wp_patcher = ( new IdentifierExtractor() )
 	->addStub( __DIR__ . '/Stubs/WP_Stubs.php' )
 	->extract();

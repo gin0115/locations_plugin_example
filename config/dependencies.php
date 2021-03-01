@@ -14,12 +14,14 @@ use PcLocations_001\PinkCrab\Core\Application\App;
 use PcLocations_001\PinkCrab\Core\Application\Config;
 use PcLocations_001\PinkCrab\BladeOne\BladeOne_Provider;
 use PcLocations_001\PinkCrab\Core\Interfaces\Renderable;
+use PcLocations_001\PinkCrab\Core\Application\App_Config;
 
 return array(
 	// Gloabl Rules
 	'*' => array(
 		'substitutions' => array(
 			App::class        => App::get_instance(),
+			App_Config::class => App::retreive( 'config' ),
 			Renderable::class => BladeOne_Provider::init(
 				Config::path( 'view' ),
 				Config::path( 'upload_root' ) . 'blade_cache'

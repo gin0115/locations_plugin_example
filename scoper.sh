@@ -9,6 +9,7 @@ rm -rf build
 rm -rf pc_vendor
 
 # Run fresh install of production and run through scoper.
+composer clear-cache
 composer install --no-dev
 php build-tools/scoper.phar add-prefix --output-dir=build --force scoper.inc.php
 

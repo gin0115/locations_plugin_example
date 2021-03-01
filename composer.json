@@ -45,8 +45,8 @@
     },
     "require": {
         "php": ">=7.1.0",
-        "pinkcrab/plugin-framework": "^0.3.0",
-        "pinkcrab/registerables": "^0.3.0",
+        "pinkcrab/plugin-framework": "^0.3",
+        "pinkcrab/registerables": "^0.3",
         "pinkcrab/bladeone-provider": "^1.0",
         "pinkcrab/wp-psr16-cache": "^2.0"
 
