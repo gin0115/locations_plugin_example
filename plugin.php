@@ -27,7 +27,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 require_once __DIR__ . '/pc_vendor/autoload.php';
 require_once __DIR__ . '/bootstrap.php';
-
 // Include activate and deactivate hooks (can be removed if not using the hooks).
 register_activation_hook( __FILE__, array( App::make( Activation::class ), 'activate' ) );
 register_deactivation_hook( __FILE__, array( App::make( Deactivation::class ), 'deactivate' ) );
