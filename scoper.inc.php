@@ -61,6 +61,9 @@ return array(
 				$contents = str_replace( "\\$prefix\\$identifier", "\\$identifier", $contents );
 			}
 
+			// Custom functions.
+			$contents = str_replace( "\\$prefix\\get_current_screen", '\\get_current_screen', $contents );
+
 			return $contents;
 		},
 	),

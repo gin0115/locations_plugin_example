@@ -29,5 +29,7 @@ return array('prefix' => 'PcLocations_001', 'finders' => array(\PcLocations_001\
     foreach ($patcherProvider() as $identifier) {
         $contents = \str_replace("\\{$prefix}\\{$identifier}", "\\{$identifier}", $contents);
     }
+    // Custom functions.
+    $contents = \str_replace("\\{$prefix}\\get_current_screen", '\\get_current_screen', $contents);
     return $contents;
 }), 'whitelist' => array('PHPUnit\\Framework\\*', 'PcLocations_001\\Composer\\Autoload\\ClassLoader', 'PinkCrab\\Locations\\*', 'PinkCrab\\WP\\Locations\\*'), 'whitelist-global-constants' => \true, 'whitelist-global-classes' => \true, 'whitelist-global-functions' => \true);

@@ -9,8 +9,8 @@ $loader = require_once __DIR__.'/autoload.php';
 if (!class_exists('Composer\Autoload\ClassLoader', false) && !interface_exists('Composer\Autoload\ClassLoader', false) && !trait_exists('Composer\Autoload\ClassLoader', false)) {
     spl_autoload_call('PcLocations_001\Composer\Autoload\ClassLoader');
 }
-if (!class_exists('ComposerAutoloaderInit86209303beadb3ab948a2f692c858df6', false) && !interface_exists('ComposerAutoloaderInit86209303beadb3ab948a2f692c858df6', false) && !trait_exists('ComposerAutoloaderInit86209303beadb3ab948a2f692c858df6', false)) {
-    spl_autoload_call('PcLocations_001\ComposerAutoloaderInit86209303beadb3ab948a2f692c858df6');
+if (!class_exists('ComposerAutoloaderInit9fcbe1c725864ad82b038d4178c8e0ca', false) && !interface_exists('ComposerAutoloaderInit9fcbe1c725864ad82b038d4178c8e0ca', false) && !trait_exists('ComposerAutoloaderInit9fcbe1c725864ad82b038d4178c8e0ca', false)) {
+    spl_autoload_call('PcLocations_001\ComposerAutoloaderInit9fcbe1c725864ad82b038d4178c8e0ca');
 }
 
 // Functions whitelisting. For more information see:

@@ -63,7 +63,8 @@
         "analyse": "vendor\/bin\/phpstan analyse src -l8",
         "sniff": ".\/vendor\/bin\/phpcs src\/ -v",
         "all": "composer test && composer analyse && composer sniff",
-        "build": "bash scoper.sh",
+        "build": "bash build.sh",
+        "build-dev": "bash build.sh --dev",
         "dump": "composer dump-autoload --working-dir build --classmap-authoritative"
     },
     "minimum-stability": "dev",
