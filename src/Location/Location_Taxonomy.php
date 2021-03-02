@@ -31,7 +31,7 @@ class Location_Taxonomy extends Taxonomy {
 	/**
 	 * @var bool
 	 */
-	public $hierarchical = true;
+	public $hierarchical = false;
 
 	/**
 	 * Populate slug and post types from config.

@@ -1,7 +1,7 @@
 {
     "name": "pinkcrab/locations_example",
     "type": "plugin",
-    "description": "Example plugin using the PinkCrab Plugin Framework",
+    "description": "Example plugin using the PinkCrab Plugin Frameworkd",
     "keywords": [],
     "homepage": "https://pinkcrab.co.uk",
     "license": "MIT",
@@ -13,14 +13,14 @@
     }],
     "autoload": {
         "psr-4": {
-            "PinkCrab\\Locations\\": "src",
-            "PinkCrab\\WP\\Locations\\": "wp"
+            "PinkCrab\\Locations\\": "../src",
+            "PinkCrab\\WP\\Locations\\": "../wp"
         },
         "files": []
     },
     "autoload-dev": {
         "psr-4": {
-            "PinkCrab\\Locations\\Tests\\": "tests/"
+            "PinkCrab\\Locations\\Tests\\": "../tests"
         }
     },
     "repositories": [{
@@ -41,14 +41,17 @@
         "pinkcrab/phpunit-helpers": "dev-master",
         "jetbrains/phpstorm-stubs": "dev-master",
         "humbug/php-scoper": "^0.14.0",
-        "bamarni/composer-bin-plugin": "^1.4"
+        "bamarni/composer-bin-plugin": "^1.4",
+        "kimhf/woocommerce-stubs": "^0.2.0",
+        "kimhf/advanced-custom-fields-pro-stubs": "^5.9"
     },
     "require": {
         "php": ">=7.1.0",
         "pinkcrab/plugin-framework": "^0.3",
         "pinkcrab/registerables": "^0.3",
         "pinkcrab/bladeone-provider": "^1.0",
-        "pinkcrab/wp-psr16-cache": "^2.0"
+        "pinkcrab/wp-psr16-cache": "^2.0",
+        "pinkcrab/form_fields": "^0.1.0"
 
 
     },
@@ -57,8 +60,14 @@
         "coverage": "phpunit --coverage-html coverage-report",
         "analyse": "vendor/bin/phpstan analyse src -l8",
         "sniff": "./vendor/bin/phpcs src/ -v",
-        "all": "composer test && composer analyse && composer sniff"
+        "all": "composer test && composer analyse && composer sniff",
+        "build": "bash scoper.sh",
+        "dump": "composer dump-autoload --working-dir build --classmap-authoritative"
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "config": {
+        "prepend-autoloader": true,
+        "autoloader-suffix": "pc_locations_dev"
+    }
 }

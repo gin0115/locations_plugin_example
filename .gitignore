@@ -1,3 +1,5 @@
 vendor
 wordpress
-build-tools/wp_patcher.do
+build-tools/patchers/*
+coverage.xml
+coverage-report

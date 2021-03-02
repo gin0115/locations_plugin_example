@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "370e86f1b8eb954ac573952e1ccf6e2a",
+    "content-hash": "e8ffac31d9396d75466b80519fdae3f0",
     "packages": [
         {
             "name": "eftec/bladeone",
@@ -446,6 +446,58 @@
             "time": "2021-01-11T11:57:34+00:00"
         },
         {
+            "name": "pinkcrab/form_fields",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Pink-Crab/Form-Fields.git",
+                "reference": "92eef5dc17257e3c1a163295a5bfbc217ab5e710"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Pink-Crab/Form-Fields/zipball/92eef5dc17257e3c1a163295a5bfbc217ab5e710",
+                "reference": "92eef5dc17257e3c1a163295a5bfbc217ab5e710",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "require-dev": {
+                "php-stubs/wordpress-stubs": "^5.6.0",
+                "phpstan/phpstan": "^0.12.6",
+                "phpunit/phpunit": "^7.0",
+                "phpunit/phpunit-dom-assertions": "~2",
+                "pinkcrab/phpunit-helpers": "dev-master",
+                "roots/wordpress": "^5.5",
+                "symfony/var-dumper": "^5.0",
+                "szepeviktor/phpstan-wordpress": "^0.7.2",
+                "wp-phpunit/wp-phpunit": "^5.0",
+                "yoast/phpunit-polyfills": "^0.1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PinkCrab\\Form_Fields\\": "src"
+                },
+                "files": []
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Glynn Quelch",
+                    "email": "glynn.quelch@pinkcrab.co.uk",
+                    "homepage": "http://clappo.co.uk",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple form field creator ideal for wp-admin hook calls where a simple input is needed only as html.",
+            "homepage": "https://pinkcrab.co.uk",
+            "time": "2021-01-14T17:32:31+00:00"
+        },
+        {
             "name": "pinkcrab/http",
             "version": "0.2.6",
             "source": {
@@ -555,23 +607,23 @@
         },
         {
             "name": "pinkcrab/registerables",
-            "version": "0.3.2",
+            "version": "0.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Pink-Crab/Module__Registerables.git",
-                "reference": "f761f89079c4e98f8e099403e5aa124b6b6fa85d"
+                "reference": "7e7f33d2fb771d27331d0e0d98b0a07fa2245277"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Pink-Crab/Module__Registerables/zipball/f761f89079c4e98f8e099403e5aa124b6b6fa85d",
-                "reference": "f761f89079c4e98f8e099403e5aa124b6b6fa85d",
+                "url": "https://api.github.com/repos/Pink-Crab/Module__Registerables/zipball/7e7f33d2fb771d27331d0e0d98b0a07fa2245277",
+                "reference": "7e7f33d2fb771d27331d0e0d98b0a07fa2245277",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.1.0",
                 "pinkcrab/enqueue": "^1.1.0",
                 "pinkcrab/http": "^0.2.0",
-                "pinkcrab/plugin-framework": "^0.3.2"
+                "pinkcrab/plugin-framework": "0.3.*"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "*",
@@ -608,7 +660,7 @@
             ],
             "description": "Abstract classes for creating post types, taxonomies, metaboxes and ajax calls.",
             "homepage": "https://pinkcrab.co.uk",
-            "time": "2021-03-01T13:51:31+00:00"
+            "time": "2021-03-01T14:07:45+00:00"
         },
         {
             "name": "pinkcrab/wp-psr16-cache",
@@ -1268,6 +1320,89 @@
                 "type"
             ],
             "time": "2021-02-26T12:52:34+00:00"
+        },
+        {
+            "name": "kimhf/advanced-custom-fields-pro-stubs",
+            "version": "v5.9.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kimhf/advanced-custom-fields-pro-stubs.git",
+                "reference": "10d978938d176d0451ed52e5e169d31de41f9810"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kimhf/advanced-custom-fields-pro-stubs/zipball/10d978938d176d0451ed52e5e169d31de41f9810",
+                "reference": "10d978938d176d0451ed52e5e169d31de41f9810",
+                "shasum": ""
+            },
+            "require-dev": {
+                "advanced-custom-fields/advanced-custom-fields-pro": "5.9.2",
+                "giacocorsiglia/stubs-generator": "^0.5",
+                "php": ">=7.1"
+            },
+            "type": "library",
+            "extra": {
+                "installer-paths": {
+                    "plugins/{$name}/": [
+                        "type:wordpress-plugin"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kim Helge Frimanslund",
+                    "homepage": "https://github.com/kimhf"
+                }
+            ],
+            "description": "Stubs for the Advanced Custom Fields Pro WordPress plugin, used for static analysis.",
+            "keywords": [
+                "advanced custom fields pro",
+                "static analysis",
+                "wordpress"
+            ],
+            "time": "2020-10-31T13:45:38+00:00"
+        },
+        {
+            "name": "kimhf/woocommerce-stubs",
+            "version": "v0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kimhf/woocommerce-stubs.git",
+                "reference": "f8d86385a76a095fc16b177a67557b082cc8b2d9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kimhf/woocommerce-stubs/zipball/f8d86385a76a095fc16b177a67557b082cc8b2d9",
+                "reference": "f8d86385a76a095fc16b177a67557b082cc8b2d9",
+                "shasum": ""
+            },
+            "require-dev": {
+                "giacocorsiglia/stubs-generator": "^0.5",
+                "php": ">=7.1",
+                "woocommerce/woocommerce": "^3.7.1"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kim Helge Frimanslund",
+                    "homepage": "https://github.com/kimhf"
+                }
+            ],
+            "description": "Stubs for the WooCommerce WordPress plugin, used for static analysis.",
+            "keywords": [
+                "static analysis",
+                "woocommerce",
+                "wordpress"
+            ],
+            "time": "2019-10-26T17:17:48+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -2417,7 +2552,8 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/WordPress/zipball/5.6.2"
+                "url": "https://api.github.com/repos/WordPress/WordPress/zipball/5.6.2",
+                "reference": "5.6.2"
             },
             "require": {
                 "php": ">=5.3.2",
@@ -3997,16 +4133,16 @@
         },
         {
             "name": "szepeviktor/phpstan-wordpress",
-            "version": "v0.7.3",
+            "version": "v0.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/szepeviktor/phpstan-wordpress.git",
-                "reference": "07349418f182cbe72a92b2e34ca98f0c0aace566"
+                "reference": "c816f18af8644382a3aea7e3b653be5e90d824a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/szepeviktor/phpstan-wordpress/zipball/07349418f182cbe72a92b2e34ca98f0c0aace566",
-                "reference": "07349418f182cbe72a92b2e34ca98f0c0aace566",
+                "url": "https://api.github.com/repos/szepeviktor/phpstan-wordpress/zipball/c816f18af8644382a3aea7e3b653be5e90d824a7",
+                "reference": "c816f18af8644382a3aea7e3b653be5e90d824a7",
                 "shasum": ""
             },
             "require": {
@@ -4053,7 +4189,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2021-02-17T21:38:11+00:00"
+            "time": "2021-03-01T18:31:08+00:00"
         },
         {
             "name": "theseer/tokenizer",

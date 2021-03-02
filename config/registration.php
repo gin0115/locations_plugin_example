@@ -1,7 +1,5 @@
 <?php
 
-
-
 declare(strict_types=1);
 
 /**
@@ -11,9 +9,13 @@ declare(strict_types=1);
  * @author Glynn Quelch <glynn.quelch@gmail.com>
  * @since 0.1.0
  */
-use PinkCrab\Locations\Location\Location_Taxonomy;
 
+use PinkCrab\Locations\Event\Event_Post_Type;
+use PinkCrab\Locations\Event\Event_Controller;
+use PinkCrab\Locations\Location\Location_Taxonomy;
 
 return array(
 	Location_Taxonomy::class,
+	Event_Post_Type::class,
+	Event_Controller::class,
 );

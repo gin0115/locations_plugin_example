@@ -1,9 +1,32 @@
 <?php
 
 declare(strict_types=1);
-
-
 use Isolated\Symfony\Component\Finder\Finder;
+
+// Returns an array of all symbols from processed stubs.
+$patcherProvider = function() {
+
+	$patcherDir = __DIR__ . '/build-tools/patchers';
+	$stubFiles  = array_diff( scandir( $patcherDir ), array( '..', '.' ) );
+
+	$symbols = array();
+	foreach ( $stubFiles as $stub ) {
+		try {
+			// Attempt to unserialize
+			$stubSymbols = unserialize( file_get_contents( $patcherDir . '/' . $stub ) );
+
+			if ( ! is_array( $stubSymbols ) ) {
+				throw new Exception( 'Array of symbols expected' );
+			}
+
+			$symbols = array_merge( $symbols, $stubSymbols );
+		} catch ( \Throwable $th ) {
+			die( $th->getMessage() );
+		}
+	}
+
+	return $symbols;
+};
 
 return array(
 	'prefix'                     => 'PcLocations_001',
@@ -30,11 +53,11 @@ return array(
 		),
 	),
 	'patchers'                   => array(
-		function ( $filePath, $prefix, $contents ) {
+		function ( $filePath, $prefix, $contents ) use ( $patcherProvider ) {
 			$prefixDoubleSlashed = str_replace( '\\', '\\\\', $prefix );
 			$quotes = array( '\'', '"', '`' );
 
-			foreach ( unserialize( file_get_contents( __DIR__ . '/build-tools/wp_patcher.do' ) ) as $identifier ) {
+			foreach ( $patcherProvider() as $identifier ) {
 				$contents = str_replace( "\\$prefix\\$identifier", "\\$identifier", $contents );
 			}
 

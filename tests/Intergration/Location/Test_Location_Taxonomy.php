@@ -19,9 +19,9 @@ class Test_Location_Taxonomy extends WP_UnitTestCase {
 		self::$app = App::get_instance();
 	}
 
-    /**
-     * @return App_Config
-     */
+	/**
+	 * @return App_Config
+	 */
 	protected function config(): App_Config {
 		return self::$app::retreive( 'config' );
 	}
